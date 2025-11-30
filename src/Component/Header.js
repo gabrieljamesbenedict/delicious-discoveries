@@ -1,6 +1,8 @@
+import "../Styles/Header.css";
+
 function Header() {
     return (
-        <div>
+        <div className="header-div">
             <h1> Delicious Discoveries</h1>
         </div>
     );

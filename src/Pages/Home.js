@@ -1,4 +1,5 @@
 import "../Styles/Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -16,7 +17,7 @@ function Home() {
                 <div className="banner-content">
                     <h1 className="banner-title">{bannerTitle}</h1>
                     <p className="banner-text">{bannerText}</p>
-                    <button className="banner-button">Discover More</button>
+                    <Link to="/delicacies" className="banner-button">Discover</Link>
                 </div>
             </section>
 

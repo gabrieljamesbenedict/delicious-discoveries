@@ -1,5 +1,61 @@
 .header-div {
 
+    margin: 0;
+    padding: 1rem 2.5rem;
+
+    display: flex;
+    justify-content: space-between;
+
     background-color: var(--primary-color);
+    color: var(--text-color);
+
+}
+
+.header-title {
+
+    margin: 0;
+    padding: 0;
+
+    color: inherit;
+    font-size: 2.5rem;
+}
+
+.header-nav {
+
+    margin: 0;
+    padding: 1rem 2rem;
+
+    display: flex;
+
+    color: inherit;
+    list-style: none;
+
+}
+
+.header-nav-button {
+
+    margin: 0;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+
+    color: inherit;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: background-color 200ms ease-in-out, padding 200ms ease-in-out;
+    
+}
+
+.header-nav-button:hover {
+
+    padding: 0.6rem 2.5rem;
+    background-color: var(--secondary-color);
+    
+}
+
+.header-nav-button:active {
+    
+    background-color: var(--accent-color);
 
 }

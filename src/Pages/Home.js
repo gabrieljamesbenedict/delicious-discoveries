@@ -16,6 +16,12 @@ function Home() {
     const featuredDelicaciesText = `
     Check out today's featured Marinduqueño delicacies.
     `;
+
+    const culturalHighlightsTitle = `Cultural Highlights`;
+    const culturalHighlightsText = `
+    Explore the rich cultural heritage of Marinduque through its traditional 
+    festivals, crafts, and historical landmarks that showcase the island's unique identity.
+    `;
     
     return (
         <>
@@ -33,12 +39,15 @@ function Home() {
                     <h1 className="featured-delicacies-title">{featuredDelicaciesTitle}</h1>
                     <p className="featured-delicacies-text">{featuredDelicaciesText}</p>
                 </div>
-                <FeaturedDelicaciesCarousel className="featured-delicacies-carousel" />
+                <FeaturedDelicaciesContainer className="featured-delicacies-carousel" />
             </section>
 
 
             <section className="cultural-highlights">
-
+                <div className="cultural-highlights-content">
+                    <h1 className="cultural-highlights-title">{culturalHighlightsTitle}</h1>
+                    <p className="cultural-highlights-text">{culturalHighlightsText}</p>
+                </div>
             </section>
         </>
     );

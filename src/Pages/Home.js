@@ -14,7 +14,7 @@ function Home() {
 
     const featuredDelicaciesTitle = `Featured Delicacies`;
     const featuredDelicaciesText = `
-    Check out today's featured Marinduqueño delicacies that.
+    Check out today's featured Marinduqueño delicacies.
     `;
     
     return (

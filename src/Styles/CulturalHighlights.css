@@ -31,6 +31,8 @@
 
 .cultural-highlights-card:hover {
 
+    cursor: pointer;
+
     box-shadow: 0 0 5px 2px var(--secondary-color);
 
     transform: translateY(-5px); 

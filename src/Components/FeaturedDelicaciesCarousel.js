@@ -1,11 +1,11 @@
-import "../Styles/Home.css";
+import "../Styles/FeaturedDelicaciesCarousel.css";
 
-function FeaeturedDelicaciesCarousel() {
+function FeaturedDelicaciesCarousel() {
     return (
-        <div>
+        <div className="featured-delicacies-carousel">
             <p>Featured Delicacies Carousel Component</p>
         </div>
     );
 };
 
-export default FeaeturedDelicaciesCarousel;
+export default FeaturedDelicaciesCarousel;

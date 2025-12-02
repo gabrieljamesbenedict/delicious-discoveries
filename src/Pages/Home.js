@@ -1,4 +1,4 @@
-import FeaeturedDelicaciesCarousel from "../Components/FeaturedDelicaciesCarousel";
+import FeaturedDelicaciesCarousel from "../Components/FeaturedDelicaciesCarousel";
 import "../Styles/Home.css";
 import { Link } from "react-router-dom";
 
@@ -14,7 +14,7 @@ function Home() {
 
     const featuredDelicaciesTitle = `Featured Delicacies`;
     const featuredDelicaciesText = `
-    Check out today's featured Marinduqueño delicacies that showcase the rich culinary heritage.
+    Check out today's featured Marinduqueño delicacies that.
     `;
     
     return (
@@ -32,8 +32,8 @@ function Home() {
                 <div className="featured-delicacies-content">
                     <h1 className="featured-delicacies-title">{featuredDelicaciesTitle}</h1>
                     <p className="featured-delicacies-text">{featuredDelicaciesText}</p>
-                    <FeaeturedDelicaciesCarousel />
                 </div>
+                <FeaturedDelicaciesCarousel className="featured-delicacies-carousel" />
             </section>
 
 

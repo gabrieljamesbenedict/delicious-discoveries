@@ -112,8 +112,9 @@ section * {
     padding: 3rem 6rem;
 
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 2rem;
 
     background-color: var(--background-color);
 
@@ -122,6 +123,8 @@ section * {
 }
 
 .featured-delicacies-content {
+    
+    flex: 1 1 0;
 
     margin: 0;
     padding: 0;
@@ -131,7 +134,13 @@ section * {
     justify-content: center;
     gap: 1.2rem;
 
-}  
+}
+
+.featured-delicacies-carousel {
+
+    flex: 2 1 0;
+
+}
 
 .featured-delicacies-title {
 

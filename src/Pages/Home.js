@@ -1,3 +1,4 @@
+import FeaeturedDelicaciesCarousel from "../Components/FeaturedDelicaciesCarousel";
 import "../Styles/Home.css";
 import { Link } from "react-router-dom";
 
@@ -31,6 +32,7 @@ function Home() {
                 <div className="featured-delicacies-content">
                     <h1 className="featured-delicacies-title">{featuredDelicaciesTitle}</h1>
                     <p className="featured-delicacies-text">{featuredDelicaciesText}</p>
+                    <FeaeturedDelicaciesCarousel />
                 </div>
             </section>
 

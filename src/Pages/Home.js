@@ -11,6 +11,11 @@ function Home() {
     that make Marinduqueño cuisine a true delight for food enthusiasts.
     `;
 
+    const featuredDelicaciesTitle = `Featured Delicacies`;
+    const featuredDelicaciesText = `
+    Check out today's featured Marinduqueño delicacies that showcase the rich culinary heritage.
+    `;
+    
     return (
         <>
             <section className="banner">
@@ -24,9 +29,8 @@ function Home() {
 
             <section className="featured-delicacies">
                 <div className="featured-delicacies-content">
-                    <h1 className="featured-delicacies-title">
-
-                    </h1>
+                    <h1 className="featured-delicacies-title">{featuredDelicaciesTitle}</h1>
+                    <p className="featured-delicacies-text">{featuredDelicaciesText}</p>
                 </div>
             </section>
 

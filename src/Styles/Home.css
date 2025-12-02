@@ -137,10 +137,8 @@ section * {
 
 }
 
-.featured-delicacies-carousel {
-
+.featured-delicacies-container {
     flex: 2.5 0 0;
-
 }
 
 .featured-delicacies-title {
@@ -198,5 +196,27 @@ section * {
     gap: 1.2rem;
 
     text-align: left;
+
+}
+
+.cultural-highlights-container {
+    flex: 2.5 0 0;
+}
+
+.cultural-highlights-title {
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 3rem;
+
+}
+
+.cultural-highlights-text {
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.5rem;
 
 }

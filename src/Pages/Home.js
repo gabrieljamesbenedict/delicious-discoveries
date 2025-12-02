@@ -1,4 +1,5 @@
 import FeaturedDelicaciesContainer from "../Components/FeaturedDelicaciesContainer";
+import CulturalHighlightsContainer from "../Components/CulturalHighlightsContainer";
 import "../Styles/Home.css";
 import { Link } from "react-router-dom";
 
@@ -39,7 +40,7 @@ function Home() {
                     <h1 className="featured-delicacies-title">{featuredDelicaciesTitle}</h1>
                     <p className="featured-delicacies-text">{featuredDelicaciesText}</p>
                 </div>
-                <FeaturedDelicaciesContainer className="featured-delicacies-carousel" />
+                <FeaturedDelicaciesContainer className="featured-delicacies-container" />
             </section>
 
 
@@ -48,6 +49,7 @@ function Home() {
                     <h1 className="cultural-highlights-title">{culturalHighlightsTitle}</h1>
                     <p className="cultural-highlights-text">{culturalHighlightsText}</p>
                 </div>
+                <CulturalHighlightsContainer className="cultural-highlights-container" />
             </section>
         </>
     );

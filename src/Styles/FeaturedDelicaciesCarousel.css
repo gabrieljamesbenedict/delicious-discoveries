@@ -5,4 +5,18 @@
 
     border: red 1px solid;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.featured-delicacies-card {
+
+    flex: 1 1 0;
+
+    margin: 0;
+    padding: 0;
+
+    border: blue 1px solid;
 }

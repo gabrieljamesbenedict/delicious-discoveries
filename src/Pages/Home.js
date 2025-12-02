@@ -1,4 +1,4 @@
-import FeaturedDelicaciesCarousel from "../Components/FeaturedDelicaciesCarousel";
+import FeaturedDelicaciesContainer from "../Components/FeaturedDelicaciesContainer";
 import "../Styles/Home.css";
 import { Link } from "react-router-dom";
 

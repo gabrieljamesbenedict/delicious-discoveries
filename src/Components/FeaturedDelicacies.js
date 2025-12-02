@@ -1,4 +1,4 @@
-import "../Styles/FeaturedDelicaciesCarousel.css";
+import "../Styles/FeaturedDelicacies.css";
 
 function FeaturedDelicacies(data) {
     const name = data.name;

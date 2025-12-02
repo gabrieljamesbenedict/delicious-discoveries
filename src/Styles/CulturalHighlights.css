@@ -1,0 +1,44 @@
+.cultural-highlights-container {
+    
+    margin: 0;
+    padding: 0;
+
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cultural-highlights-card {
+
+    flex: 1 1 0;
+
+    margin: 0;
+    padding: 1rem;
+
+    border-radius: 1rem;
+
+    box-sizing: border-box;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+
+}
+
+.cultural-highlights-card:hover {
+
+    box-shadow: 0 0 5px 2px var(--secondary-color);
+
+    transform: translateY(-5px); 
+
+}
+
+.cultural-highlights-card img {
+
+    width: 100%;
+
+}

@@ -14,7 +14,12 @@ const client = new MongoClient(uri, {
   },
 });
 
+let isConnected = false;
 export async function run(collectionName, crud) {
+    if (!isConnected) {
+    await client.connect();
+    isConnected = true;
+  }
   const db = client.db(db_name);
   const coll = db.collection(collectionName);
 

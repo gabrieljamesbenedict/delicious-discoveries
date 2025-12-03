@@ -32,6 +32,7 @@ export const getDelicacy = async (req, res) => {
 
 export const postDelicacy = async (req, res) => {
     try {
+
         const data = req.body;
 
         const result = await run("delicacies", (coll) => coll.insertOne(data));

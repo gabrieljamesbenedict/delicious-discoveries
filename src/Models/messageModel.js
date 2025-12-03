@@ -1,4 +1,4 @@
-export class vendor {
+export default class vendor {
     constructor(name, specialty, contact, location, imageURL) {
         this.name = name;
         this.specialty = specialty;

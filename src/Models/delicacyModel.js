@@ -1,4 +1,4 @@
-export class delicacy {
+export default class delicacy {
     constructor(name, description, ingredients, preparation, region, imageURL) {
         this.name = name;
         this.description = description;

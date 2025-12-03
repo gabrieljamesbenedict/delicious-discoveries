@@ -3,13 +3,12 @@
     margin: 0;
     padding: 0;
 
-    color: var(--text-color);
-
 }
 
 .about-us-container {
 
     padding: 4rem 6rem;
+    color: var(--text-color);
 
 }
 

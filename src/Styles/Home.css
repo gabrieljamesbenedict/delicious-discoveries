@@ -81,8 +81,8 @@ section * {
     width: fit-content;
     
     cursor: pointer;
-    color: var(--text-color);
-    font-size: 1.2rem;
+    color: var(--background-color);
+    font-size: 1.5rem;
     font-weight: 700;
 
     background-color: var(--accent-color);

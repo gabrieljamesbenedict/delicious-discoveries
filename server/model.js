@@ -1,4 +1,4 @@
-class delicacy {
+export class delicacy {
     constructor(name, description, ingredients, preparation, region) {
         this.name = name;
         this.description = description;
@@ -8,7 +8,7 @@ class delicacy {
     }
 }
 
-class vendor {
+export class vendor {
     constructor(name, specialty, contact, location) {
         this.name = name;
         this.specialty = specialty;
@@ -17,7 +17,7 @@ class vendor {
     }
 }
 
-class message {
+export class message {
     constructor(name, email, content) {
         this.name = name;
         this.email = email;

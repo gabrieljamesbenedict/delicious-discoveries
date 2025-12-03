@@ -1,10 +1,11 @@
-require('dotenv').config();
+import dotenv from "dotenv";
+dotenv.config();
 const db_name = process.env.DB_NAME;
 const db_pw = process.env.DB_PASSWORD;
 
 console.log(name);
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+import { MongoClient, ServerApiVersion } from "mongodb";
 const uri = `mongodb+srv://delicious-discoveries:${db_pw}@dev-aws-deliciousdiscov.w4xkuce.mongodb.net/?appName=dev-aws-deliciousdiscoveries`;
 let db = null
 

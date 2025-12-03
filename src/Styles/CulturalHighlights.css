@@ -33,7 +33,7 @@
 
     cursor: pointer;
 
-    box-shadow: 0 0 5px 2px var(--secondary-color);
+    box-shadow: 0 0 5px 2px var(--accent-color);
 
     transform: translateY(-5px); 
 

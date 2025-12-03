@@ -1,8 +1,9 @@
-require('dotenv').config()
+import 'dotenv/config';
+import { MongoClient, ServerApiVersion } from 'mongodb';
+
 const db_name = process.env.DB_NAME;
 const db_pw = process.env.DB_PASSWORD;
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = `mongodb+srv://delicious-discoveries:${db_pw}@dev-aws-deliciousdiscov.w4xkuce.mongodb.net/?appName=dev-aws-deliciousdiscoveries`;
 
 const client = new MongoClient(uri, {
@@ -10,19 +11,20 @@ const client = new MongoClient(uri, {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
-  }
+  },
 });
 
-let db = null
-
-export async function run() {
+export async function run(collectionName, crud) {
+  let result = null;
   try {
-    db = client.db("sample_mflix");
-    db.collection("users");
+    const db = client.db(db_name);
+    const coll = db.collection(collectionName);
+    result = await crud(coll);
   } finally {
-    // Ensures that the client will close when you finish/error
     await client.close();
   }
-}
-run().catch(console.dir);
 
+  return result;
+}
+
+// run().catch(console.dir);

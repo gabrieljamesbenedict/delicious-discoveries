@@ -3,6 +3,13 @@ var bodyParser = require('body-parser')
 var express = require('express'),
     app = express(),
     PORT = 8080;
+var cors = require('cors');
+
+app.use(cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type"],
+}));
 
 app.use(bodyParser.json())
 

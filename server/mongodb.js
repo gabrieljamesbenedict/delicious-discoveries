@@ -15,16 +15,10 @@ const client = new MongoClient(uri, {
 });
 
 export async function run(collectionName, crud) {
-  let result = null;
-  try {
-    const db = client.db(db_name);
-    const coll = db.collection(collectionName);
-    result = await crud(coll);
-  } finally {
-    await client.close();
-  }
+  const db = client.db(db_name);
+  const coll = db.collection(collectionName);
 
-  return result;
+  return await crud(coll);
 }
 
 // run().catch(console.dir);

@@ -1,31 +1,38 @@
-//import Delicacy from "../Models/delicacyModel.js";
-
-const Delicacy = require("../Models/delicacyModel.js");
-const http = require('http');
-
-//return JSON.parse(result);
-
-export const getAllDelicacies = () => {
-    const result = http.get(`http://localhost:8080/api/delicacies`);
-    return result.data;
+export const getAllDelicacies = async () => {
+    const res = await fetch("http://localhost:8080/api/delicacies");
+    return await res.json();
 };
 
-export const getDelicacy = (id) => {
-    const result = http.get(`http://localhost:8080/api/delicacies/${id}`);
-    return result.data;
+export const getDelicacy = async (id) => {
+    const res = await fetch(`http://localhost:8080/api/delicacies/${id}`);
+    return await res.json();
 };
 
-export const postDelicacy = (data) => {
-    const result = http.post(`http://localhost:8080/api/delicacies`, JSON.stringify(data));
-    return result.data;
+export const postDelicacy = async (data) => {
+    const res = await fetch("http://localhost:8080/api/delicacies", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+    return await res.json();
 };
 
-export const putDelicacy = (id, data) => {
-    const result = http.put(`http://localhost:8080/api/delicacies/${id}`, JSON.stringify(data));
-    return result.data;
+export const putDelicacy = async (id, data) => {
+    const res = await fetch(`http://localhost:8080/api/delicacies/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+    return await res.json();
 };
 
-export const deleteDelicacy = (id) => {
-    const result = http.delete(`http://localhost:8080/api/delicacies/${id}`);
-    return result.data;
+export const deleteDelicacy = async (id) => {
+    const res = await fetch(`http://localhost:8080/api/delicacies/${id}`, {
+        method: "DELETE"
+    });
+    return await res.json();
 };

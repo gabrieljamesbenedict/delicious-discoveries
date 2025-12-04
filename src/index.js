@@ -9,27 +9,24 @@ import AboutUs from './Pages/AboutUs';
 import Delicacies from './Pages/Delicacies';
 import Vendors from './Pages/Vendors';
 import ContactUs from './Pages/ContactUs';
-import Header from './Components/Header';
+import DelicacyDetail from './Components/DelicacyDetail';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
-  {path:"/home", element:<App />, children:[
-    {path:"/home",element:<Home />}
-  ]},
-  {path:"/about-us", element:<App />, children:[
-    {path:"/about-us",element:<AboutUs />}
-  ]},
-  {path:"/delicacies", element:<App />, children:[
-    {path:"/delicacies",element:<Delicacies />}
-  ]},
-  {path:"/vendors", element:<App />, children:[
-    {path:"/vendors",element:<Vendors />}
-  ]},
-  {path:"/contact-us", element:<App />, children:[
-    {path:"/contact-us",element:<ContactUs />}
-  ]},
-  
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { path: "", element: <Home /> },
+      { path: "about-us", element: <AboutUs /> },
+      { path: "delicacies", element: <Delicacies /> },
+      { path: "delicacies/:id", element: <DelicacyDetail /> },
+      { path: "vendors", element: <Vendors /> },
+      { path: "contact-us", element: <ContactUs /> },
+    ],
+  },
 ]);
+
 
 root.render(
   <React.StrictMode>

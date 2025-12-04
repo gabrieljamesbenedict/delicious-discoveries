@@ -1,9 +1,7 @@
-export default class vendor {
-    constructor(name, specialty, contact, location, imageURL) {
+export default class message {
+    constructor(name, email, content) {
         this.name = name;
-        this.specialty = specialty;
-        this.contact = contact;
-        this.location = location;
-        this.imageURL = imageURL;
+        this.email = email;
+        this.content = content;
     }
 }

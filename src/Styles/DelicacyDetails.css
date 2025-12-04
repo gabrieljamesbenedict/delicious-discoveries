@@ -1,0 +1,48 @@
+.delicacy-details-page {
+
+    margin: 0;
+    padding: 4rem;
+
+    display: flex;
+    gap: 5rem;
+    
+}
+
+.delicacy-details-img {
+
+    flex: 3 1 0;
+
+}
+
+.delicacy-details-img > img {
+
+    width: 100%;
+
+    border-radius: 15px;
+
+}
+
+.delicacy-details-container {
+
+    flex: 5 1 0;
+    color: var(--text-color);
+
+}
+
+.delicacy-details-container > .card-title {
+
+    font-size: 4rem;
+
+}
+
+.delicacy-details-container > .card-description {
+
+    font-size: 2rem;
+
+}
+
+.delicacy-details-container > .card-section > h3 {
+
+    font-size: 1.5rem;
+
+}
